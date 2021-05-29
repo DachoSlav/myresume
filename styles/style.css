@@ -1,0 +1,1002 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  max-width: 65em;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  z-index: 10;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: gl 0.5s ease;
+          animation: gl 0.5s ease;
+}
+
+@-webkit-keyframes gl {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes gl {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.circle1, .circle2 {
+  background: white;
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 6%;
+  z-index: 2;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 5%;
+  z-index: 2;
+}
+
+.dashboard {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  padding: 0 0.3em;
+}
+
+.dashboard .user .avatar {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  margin: 0.3em;
+}
+
+.dashboard .user #dk {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.personal div {
+  margin: 0.3em 0.3em;
+  text-align: left;
+}
+
+.personal div .fa-map-pin {
+  color: red;
+}
+
+.personal div .fa-graduation-cap {
+  color: #11082c;
+}
+
+.personal div .fa-birthday-cake {
+  color: #6e6e6e;
+}
+
+.personal div .fa-mobile-alt {
+  color: #5667ff;
+}
+
+.personal div .fa-envelope-open {
+  color: #157a15;
+}
+
+.personal div .fa-linkedin {
+  color: #3d46c5;
+}
+
+.personal div .fa-guitar {
+  color: sandybrown;
+}
+
+.personal div .fa-book-open {
+  color: #5667ff;
+}
+
+.personal div .fa-basketball-ball {
+  color: #be5c00;
+}
+
+.personal div .fa-bicycle {
+  color: gray;
+}
+
+.personal div .fa-facebook {
+  color: #3434ff;
+}
+
+.personal div .fa-instagram {
+  color: #e93d3d;
+}
+
+.personal div #location {
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal div #education {
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal div #year-old {
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal div #mobile {
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal div .email-text {
+  text-decoration: none;
+  color: black;
+  white-space: wrap;
+  margin-right: 0.2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal div .github-text {
+  text-decoration: none;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal div .linkedin-text {
+  text-decoration: none;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal div .myemail {
+  display: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal div .facebook-text {
+  color: black;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal div .instagram-text {
+  color: black;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skills {
+  width: 6em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: inline;
+}
+
+.skills .html {
+  padding: 0;
+  position: relative;
+  margin: 0.5em;
+  height: 5em;
+  width: 4em;
+}
+
+.skills .html .the-html-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .html .the-html-card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.skills .html .the-html-card .the-html-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.skills .html .the-html-card .the-html-front .html-photo {
+  height: 80%;
+  width: 100%;
+}
+
+.skills .html .the-html-card .the-html-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .css {
+  padding: 0;
+  position: relative;
+  margin: 0.5em;
+  height: 5em;
+  width: 4em;
+}
+
+.skills .css .the-css-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .css .the-css-card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.skills .css .the-css-card .the-css-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.skills .css .the-css-card .the-css-front .css-photo {
+  height: 80%;
+  width: 100%;
+}
+
+.skills .css .the-css-card .the-css-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .scss {
+  padding: 0;
+  position: relative;
+  margin: 0.5em;
+  height: 5em;
+  width: 4em;
+}
+
+.skills .scss .the-scss-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .scss .the-scss-card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.skills .scss .the-scss-card .the-scss-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.skills .scss .the-scss-card .the-scss-front .scss-photo {
+  height: 80%;
+  width: 100%;
+}
+
+.skills .scss .the-scss-card .the-scss-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .js {
+  padding: 0;
+  position: relative;
+  margin: 0.5em;
+  height: 5em;
+  width: 4em;
+}
+
+.skills .js .the-js-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .js .the-js-card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.skills .js .the-js-card .the-js-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.skills .js .the-js-card .the-js-front .js-photo {
+  height: 80%;
+  width: 100%;
+}
+
+.skills .js .the-js-card .the-js-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .jq {
+  padding: 0;
+  position: relative;
+  margin: 0.5em;
+  height: 5em;
+  width: 4em;
+}
+
+.skills .jq .the-jq-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .jq .the-jq-card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.skills .jq .the-jq-card .the-jq-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.skills .jq .the-jq-card .the-jq-front .jq-photo {
+  height: 80%;
+  width: 100%;
+}
+
+.skills .jq .the-jq-card .the-jq-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .bs {
+  padding: 0;
+  position: relative;
+  margin: 0.5em;
+  height: 5em;
+  width: 4em;
+}
+
+.skills .bs .the-bs-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .bs .the-bs-card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.skills .bs .the-bs-card .the-bs-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.skills .bs .the-bs-card .the-bs-front .bs-photo {
+  height: 80%;
+  width: 100%;
+}
+
+.skills .bs .the-bs-card .the-bs-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .re {
+  padding: 0;
+  position: relative;
+  margin: 0.5em;
+  height: 5em;
+  width: 4em;
+}
+
+.skills .re .the-re-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .re .the-re-card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.skills .re .the-re-card .the-re-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.skills .re .the-re-card .the-re-front .re-photo {
+  height: 80%;
+  width: 100%;
+}
+
+.skills .re .the-re-card .the-re-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.links .link {
+  margin: 0.1rem 0.3rem;
+  padding: 1rem 0.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links .link .html-photo {
+  height: 3em;
+  width: 3em;
+}
+
+.links .link .html-photo:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.links .link .css-photo {
+  height: 3em;
+  width: 3em;
+}
+
+.links .link .css-photo:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.links .link .scss-photo {
+  height: 3em;
+  width: 3em;
+}
+
+.links .link .scss-photo:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.links .link .js-photo {
+  height: 3em;
+  width: 3em;
+}
+
+.links .link .js-photo:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.links .link .jq-photo {
+  height: 3em;
+  width: 3em;
+}
+
+.links .link .jq-photo:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.links .link .bs-photo {
+  height: 3em;
+  width: 3em;
+}
+
+.links .link .bs-photo:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.links .link .re-photo {
+  height: 3em;
+  width: 3em;
+}
+
+.links .link .re-photo:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.about-me {
+  position: relative;
+  background: #bbe1e77a;
+  border-radius: 1rem 1rem 2rem 2rem;
+  padding: 1em 0.2em 0em 0.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 12.5em;
+}
+
+.about-me .about-me-text {
+  position: absolute;
+  top: -1em;
+}
+
+.skills-2 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  position: relative;
+  margin-left: 0;
+  max-width: 40em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.skills-2 .bar {
+  background: #353b48;
+  display: block;
+  height: 0.4em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px #2187e7b3;
+          box-shadow: 0 0 10px #2187e7b3;
+}
+
+.skills-2 .bar span {
+  height: 100%;
+  float: left;
+  background: #5fb2ff;
+  border-radius: 0 3px 3px 0;
+}
+
+.skills-2 .skills-container-2 {
+  margin-top: -3.5em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.skills-2 .skills-container-2 .list > li {
+  list-style-type: none;
+  margin-top: 3.9em;
+}
+
+.skills-2 .skills-container-2 .list {
+  padding: 1em;
+}
+
+.skills-2 .html-span {
+  width: 85%;
+  -webkit-animation: html 2s;
+          animation: html 2s;
+}
+
+.skills-2 .css-span {
+  width: 80%;
+  -webkit-animation: css 2s;
+          animation: css 2s;
+}
+
+.skills-2 .scss-span {
+  width: 65%;
+  -webkit-animation: scss 2s;
+          animation: scss 2s;
+}
+
+.skills-2 .js-span {
+  width: 50%;
+  -webkit-animation: js 2s;
+          animation: js 2s;
+}
+
+.skills-2 .jq-span {
+  width: 45%;
+  -webkit-animation: jq 2s;
+          animation: jq 2s;
+}
+
+.skills-2 .bs-span {
+  width: 30%;
+  -webkit-animation: bs 2s;
+          animation: bs 2s;
+}
+
+.skills-2 .react-span {
+  width: 5%;
+  -webkit-animation: react 2s;
+          animation: react 2s;
+}
+
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes scss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes scss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes jq {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@keyframes jq {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@-webkit-keyframes bs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes bs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@-webkit-keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 5%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 5%;
+  }
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  height: 30vh;
+  width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-2 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
