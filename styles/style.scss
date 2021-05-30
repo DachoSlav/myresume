@@ -9,12 +9,16 @@
         transition: all 0.5s ease;
         transform: scale(1.2);
         cursor: pointer;
+        
     }
     
 }
+body{
+    overflow: hidden;
+}
 main{
     min-height: 100vh;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(to bottom, rgb(164, 212, 231), rgb(58, 120, 236));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,26 +43,143 @@ main{
         opacity: 100%;
     }
 }
-.circle1, .circle2{
-    background: white;
-    height: 15rem;
-    width: 15rem;
-    position: absolute;
+
+.cloud.one{
+    top: 50%;
     
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255,255,255, 0.5));
+    width: 15em;
+    height: 5em;
+}
+.cloud.two{
+    top: 30%;
+    
+    width: 5em;
+    height: 2em;
+    animation-duration: 15s;
+    
+}
+.cloud.three{
+    top: 20%;
+    
+    width: 8em;
+    height: 3em;
+    animation-duration: 13s;
+}
+.cloud{
+    position: absolute;
+    left:0;
+    background: white;
+    border-radius: 1000px;
+    animation:  cloudd 10s infinite linear;
+}
+.cloud::before{
+    content: '';
+    position: absolute;
+    top:-80%;
+    left: 10%;
+    width: 50%;
+    height: 150%;
+    background: white;
     border-radius: 50%;
 }
-.circle1{
-    top: 5%;
-    right: 6%;
-    z-index: 2;
+.cloud::after{
+    content: '';
+    position: absolute;
+    top:-40%;
+    right: 20%;
+    width: 30%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+}
+
+@keyframes cloudd {
+    from{
+        left: -100%;
+        -o-transform: translateX(-100%);
+    }
+    0%{
+        margin-top: 0em;
+    }
+    50%{
+        margin-top: 5em;
+    }
+    100%{
+        margin-top: 0em;
+    }
+    to{
+        left: 100%;
+        -o-transform: translateX(0%);
+    }
+}
+
+.cloudr.twor{
+    top: 30%;
+    
+    width: 5em;
+    height: 2em;
+    animation-duration: 18s;
     
 }
-.circle2{
-    bottom: 5%;
-    left: 5%;
-    z-index: 2;
+.cloudr.threer{
+    top: 20%;
+    
+    width: 8em;
+    height: 3em;
+    animation-duration: 14s;
 }
+.cloudr{
+    position: absolute;
+    right:0;
+    background: white;
+    border-radius: 1000px;
+    animation:  clouddr 8s infinite linear;
+}
+.cloudr::before{
+    content: '';
+    position: absolute;
+    top:-80%;
+    right: 10%;
+    width: 50%;
+    height: 150%;
+    background: white;
+    border-radius: 50%;
+}
+.cloudr::after{
+    content: '';
+    position: absolute;
+    top:-40%;
+    left: 20%;
+    width: 30%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+}
+
+@keyframes clouddr {
+    from{
+        right: -100%;
+        -o-transform: translateX(-100%);
+    }
+    0%{
+        margin-top: 0em;
+    }
+    50%{
+        margin-top: 5em;
+    }
+    100%{
+        margin-top: 0em;
+    }
+    to{
+        right: 100%;
+        -o-transform: translateX(0%);
+    }
+    
+}
+
+
+
+
 .dashboard{
     flex: 1;
     display: flex;
@@ -70,6 +191,7 @@ main{
     border-radius: 2rem;
     padding: 0 0.3em;
     .user{
+        flex: 1;
         .avatar{
             height: 4em;
             width: 4em;
@@ -85,7 +207,28 @@ main{
         
     }
 }
+.about-me{
+    flex: 1;
+    position: relative;
+    
+    
+    padding: 1em 0.2em 0em 0.2em;
+    font-family:Arial, Helvetica, sans-serif;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about-me-text{
+        background: #bbe1e77a;
+        padding: 1em 0.2em 1em 0.2em;
+        border-radius: 1rem 1rem 2rem 2rem;
+    }
+    
+    
+}
 .personal{
+    
     div{
         margin: 0.3em 0.3em;
         text-align: left;
@@ -474,6 +617,7 @@ main{
     margin:0.5em;
     height: 5em;
     width: 4em;
+    
    
     .the-re-card{
         position: absolute;
@@ -566,20 +710,7 @@ justify-content: space-evenly;
 
 }
 
-.about-me{
-    position: relative;
-    background: #bbe1e77a;
-    border-radius: 1rem 1rem 2rem 2rem;
-    padding: 1em 0.2em 0em 0.2em;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top: 12.5em;
-    .about-me-text{
-        position: absolute;
-        top: -1em;
-        
 
-    }
-}
 .skills-2{
     flex: 5;
     position: relative;
@@ -603,11 +734,11 @@ justify-content: space-evenly;
         border-radius: 0 3px 3px 0;
     }
     .skills-container-2{
-        margin-top: -3.5em;
+        margin-top: -2.8em;
         font-family:'Times New Roman', Times, serif;
         .list > li{
             list-style-type: none;
-            margin-top: 3.9em;
+            margin-top: 2.8em;
             
         }
         .list{
@@ -712,6 +843,16 @@ justify-content: space-evenly;
 }
 
 
+
+@keyframes cloud {
+    0%{
+        left: 0%
+    }
+    100%{
+        left: 100%
+    }
+    
+}
 @media only screen and (max-width: 850px){
     .skills{
         flex-direction: column;
