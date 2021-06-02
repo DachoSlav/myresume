@@ -57,6 +57,71 @@ main{
     animation-duration: 15s;
     
 }
+.plane{
+    position: absolute;
+    right: -200%;
+    animation: ap 20s infinite;
+    animation-delay: 50s;
+    height: 10em;
+    width:auto;
+    .airplane-1{
+       
+    }
+
+}
+.plane-two{
+    transform: rotateY(180deg);
+    position: absolute;
+    height: 10em;
+    width:auto;
+    top: 20%;
+    left: -100%;
+    animation: ap2 60s infinite;
+    animation-delay: 40s;
+    .plane-2{
+        height: 5em;
+        width: auto;
+    }
+}
+@keyframes ap2{
+    from{
+        left: -200%;
+        -o-transform: translateX(-100%);
+    }
+    0%{
+        margin-top: 0em;
+    }
+    50%{
+        margin-top: 5em;
+    }
+    100%{
+        margin-top: 0em;
+    }
+    to{
+        left: 200%;
+        -o-transform: translateX(100%);
+    }
+}
+
+@keyframes ap {
+    from{
+        right: -200%;
+        -o-transform: translateX(-100%);
+    }
+    0%{
+        margin-top: 0em;
+    }
+    50%{
+        margin-top: 5em;
+    }
+    100%{
+        margin-top: 0em;
+    }
+    to{
+        right: 200%;
+        -o-transform: translateX(100%);
+    }
+}
 .cloud.three{
     top: 20%;
     
