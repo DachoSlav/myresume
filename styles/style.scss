@@ -43,7 +43,74 @@ main{
         opacity: 100%;
     }
 }
+.cloud.one{
+    top: 50%;
+    
+    width: 15em;
+    height: 5em;
+}
+.cloud.two{
+    top: 30%;
+    
+    width: 5em;
+    height: 2em;
+    animation-duration: 15s;
+    
+}
+.cloud.three{
+    top: 20%;
+    
+    width: 8em;
+    height: 3em;
+    animation-duration: 13s;
+}
+.cloud{
+    position: absolute;
+    left:0;
+    background: white;
+    border-radius: 1000px;
+    animation:  cloudd 10s infinite linear;
+}
+.cloud::before{
+    content: '';
+    position: absolute;
+    top:-80%;
+    left: 10%;
+    width: 50%;
+    height: 150%;
+    background: white;
+    border-radius: 50%;
+}
+.cloud::after{
+    content: '';
+    position: absolute;
+    top:-40%;
+    right: 20%;
+    width: 30%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+}
 
+@keyframes cloudd {
+    from{
+        left: -100%;
+        -o-transform: translateX(-100%);
+    }
+    0%{
+        margin-top: 0em;
+    }
+    50%{
+        margin-top: 5em;
+    }
+    100%{
+        margin-top: 0em;
+    }
+    to{
+        left: 100%;
+        -o-transform: translateX(0%);
+    }
+}
 .cloud.one{
     top: 50%;
     
