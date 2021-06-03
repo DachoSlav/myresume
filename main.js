@@ -1,161 +1,153 @@
+
+
 $(document).ready(function(){
-
-    var html = new Date("8/1/2018");
-    var css = new Date("8/1/2018"); 
-    var scss = new Date("3/5/2021"); 
-    var js = new Date("8/1/2019"); 
-    var jquery = new Date("3/5/2020"); 
-    var bs = new Date("3/5/2021"); 
-    var react = new Date("4/5/2021"); 
-
-    var d2 = new Date();
-    var year = d2.getFullYear();
-    var month = d2.getUTCMonth()+1;
-    //html
-    if(html.getFullYear() == year){
-        if(html.getMonth()+1 == month){
-        }else{
-        var BiggerMonth = Math.max(html.getMonth()+1,  month);
-        var SmallerMonth = Math.min(html.getMonth()+1, month);
-        var difference = BiggerMonth - SmallerMonth;
-        document.getElementById("html-exp").innerHTML = difference + "+months";;
-        }
-        console.log("done")
-    }
-    else{
-        var BiggerYear = Math.max(html.getFullYear(), year);
-        var SmallerYear = Math.min(html.getFullYear(), year);
-        var difference = BiggerYear - SmallerYear;
-        document.getElementById("html-exp").innerHTML = difference + "+years";
+    var html=1;
+    $(".html-div").hover(function none() {
         
-    }
-
-    //css
-    if(css.getFullYear() == year){
-        if(css.getMonth()+1 == month){
-        }else{
-        var BiggerMonth = Math.max(css.getMonth()+1,  month);
-        var SmallerMonth = Math.min(css.getMonth()+1, month);
-        var difference = BiggerMonth - SmallerMonth;
-        document.getElementById("css-exp").innerHTML = difference + "+months";;
-        }
-    }
-    else{
-        var BiggerYear = Math.max(css.getFullYear(), year);
-        var SmallerYear = Math.min(css.getFullYear(), year);
-        var difference = BiggerYear - SmallerYear;
-        document.getElementById("css-exp").innerHTML = difference + "+years";
-        
-    }
-    //scss
-    if(scss.getFullYear() == year){
-        if(scss.getMonth()+1 == month){
-        }else{
-        var BiggerMonth = Math.max(scss.getMonth()+1,  month);
-        var SmallerMonth = Math.min(scss.getMonth()+1, month);
-        var difference = BiggerMonth - SmallerMonth;
-        document.getElementById("scss-exp").innerHTML = difference + "+months";;
-        }
-    }
-    else{
-        var BiggerYear = Math.max(scss.getFullYear(), year);
-        var SmallerYear = Math.min(scss.getFullYear(), year);
-        var difference = BiggerYear - SmallerYear;
-        document.getElementById("scss-exp").innerHTML = difference + "+years";
-        
-    }
-
-    //js
-    if(js.getFullYear() == year){
-        if(js.getMonth()+1 == month){
-        }else{
-        var BiggerMonth = Math.max(js.getMonth()+1,  month);
-        var SmallerMonth = Math.min(js.getMonth()+1, month);
-        var difference = BiggerMonth - SmallerMonth;
-        document.getElementById("js-exp").innerHTML = difference + "+months";;
-        }
-    }
-    else{
-        var BiggerYear = Math.max(js.getFullYear(), year);
-        var SmallerYear = Math.min(js.getFullYear(), year);
-        var difference = BiggerYear - SmallerYear;
-        document.getElementById("js-exp").innerHTML = difference + "+years";
-        
-    }
-
-    //jquery
-    if(jquery.getFullYear() == year){
-        if(jquery.getMonth()+1 == month){
-        }else{
-        var BiggerMonth = Math.max(jquery.getMonth()+1,  month);
-        var SmallerMonth = Math.min(jquery.getMonth()+1, month);
-        var difference = BiggerMonth - SmallerMonth;
-        document.getElementById("jq-exp").innerHTML = difference + "+months";;
-        }
-    }
-    else{
-        var BiggerYear = Math.max(jquery.getFullYear(), year);
-        var SmallerYear = Math.min(jquery.getFullYear(), year);
-        var difference = BiggerYear - SmallerYear;
-        document.getElementById("jq-exp").innerHTML = difference + "+years";
-        
-    }
-    //bootstrap
-    if(bs.getFullYear() == year){
-        if(bs.getMonth()+1 == month){
-        }else{
-        var BiggerMonth = Math.max(bs.getMonth()+1,  month);
-        var SmallerMonth = Math.min(bs.getMonth()+1, month);
-        var difference = BiggerMonth - SmallerMonth;
-        document.getElementById("bs-exp").innerHTML = difference + "+months";;
-        }
-    }
-    else{
-        var BiggerYear = Math.max(bs.getFullYear(), year);
-        var SmallerYear = Math.min(bs.getFullYear(), year);
-        var difference = BiggerYear - SmallerYear;
-        document.getElementById("bs-exp").innerHTML = difference + "+years";
-        
-    }
-
-
-    //react
-    if(react.getFullYear() == year){
-        if(react.getMonth()+1 == month){
-        }else{
-        var BiggerMonth = Math.max(react.getMonth()+1,  month);
-        var SmallerMonth = Math.min(react.getMonth()+1, month);
-        var difference = BiggerMonth - SmallerMonth;
-        document.getElementById("re-exp").innerHTML = difference + "+months";;
-        }
-    }
-    else{
-        var BiggerYear = Math.max(react.getFullYear(), year);
-        var SmallerYear = Math.min(react.getFullYear(), year);
-        var difference = BiggerYear - SmallerYear;
-        document.getElementById("re-exp").innerHTML = difference + "+years";
-        
-    }
+    if(html==1){
+        $(".html-photo").css("display", "none");
+        $(".html-front-page").addClass("html-back-page")
+        $(".html-the-back").css("display", "block")
         
 
+        return html = 0;
+    }else{
+        $(".html-photo").css("display" , "block");
+        $(".html-front-page").removeClass("html-back-page");
+        $(".html-the-back").css("display", "none")
+        
+        
+        return html = 1;
+    }
+        
+    });
+    var css=1;
+    $(".css-div").hover(function none() {
+        
+    if(css==1){
+        $(".css-photo").css("display", "none");
+        $(".css-front-page").addClass("css-back-page")
+        $(".css-the-back").css("display", "block")
+        
+
+        return css = 0;
+    }else{
+        $(".css-photo").css("display" , "block");
+        $(".css-front-page").removeClass("css-back-page");
+        $(".css-the-back").css("display", "none")
+        
+        
+        return css = 1;
+    }
+        
+    });
+
+    var scss=1;
+    $(".scss-div").hover(function none() {
+        
+    if(scss==1){
+        $(".scss-photo").css("display", "none");
+        $(".scss-front-page").addClass("scss-back-page")
+        $(".scss-the-back").css("display", "block")
+        
+
+        return scss = 0;
+    }else{
+        $(".scss-photo").css("display" , "block");
+        $(".scss-front-page").removeClass("css-back-page");
+        $(".scss-the-back").css("display", "none")
+        
+        
+        return scss = 1;
+    }
+        
+    });
+
+    var js=1;
+    $(".js-div").hover(function none() {
+        
+    if(js==1){
+        $(".js-photo").css("display", "none");
+        $(".js-front-page").addClass("scss-back-page")
+        $(".js-the-back").css("display", "block")
+        
+
+        return js = 0;
+    }else{
+        $(".js-photo").css("display" , "block");
+        $(".js-front-page").removeClass("css-back-page");
+        $(".js-the-back").css("display", "none")
+        
+        
+        return js = 1;
+    }
+        
+    });
+
+    var jq=1;
+    $(".jq-div").hover(function none() {
+        
+    if(jq==1){
+        $(".jq-photo").css("display", "none");
+        $(".jq-front-page").addClass("scss-back-page")
+        $(".jq-the-back").css("display", "block")
+        
+
+        return jq = 0;
+    }else{
+        $(".jq-photo").css("display" , "block");
+        $(".jq-front-page").removeClass("css-back-page");
+        $(".jq-the-back").css("display", "none")
+        
+        
+        return jq = 1;
+    }
+        
+    });
+
+    var bs=1;
+    $(".bs-div").hover(function none() {
+        
+    if(bs==1){
+        $(".bs-photo").css("display", "none");
+        $(".bs-front-page").addClass("scss-back-page")
+        $(".bs-the-back").css("display", "block")
+        
+
+        return bs = 0;
+    }else{
+        $(".bs-photo").css("display" , "block");
+        $(".bs-front-page").removeClass("css-back-page");
+        $(".bs-the-back").css("display", "none")
+        
+        
+        return bs = 1;
+    }
+        
+    });
+
+    var re=1;
+    $(".re-div").hover(function none() {
+        
+    if(re==1){
+        $(".re-photo").css("display", "none");
+        $(".re-front-page").addClass("scss-back-page")
+        $(".re-the-back").css("display", "block")
+        
+
+        return re = 0;
+    }else{
+        $(".re-photo").css("display" , "block");
+        $(".re-front-page").removeClass("css-back-page");
+        $(".re-the-back").css("display", "none")
+        
+        
+        return re = 1;
+    }
+        
+    });
+
+
+
+    
 });
-var a;
-function display(){
-if(a==1){
-    document.getElementById("navbarNav").style.display = "none";    
-    return a=0;
-}else{
-    document.getElementById("navbarNav").style.display = "block";
-    $(".about-me").click(function(){
-        document.getElementById("navbarNav").style.display = "none";
-    })
-    $(".contact").click(function(){
-        document.getElementById("navbarNav").style.display = "none";
-    })
-    $(".experience").click(function(){
-        document.getElementById("navbarNav").style.display = "none";
-    })
-    return a=1;
-}
-
-}

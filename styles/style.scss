@@ -20,7 +20,7 @@ body{
 }
 main{
     min-height: 100vh;
-    background: linear-gradient(to bottom, rgb(164, 212, 231), rgb(58, 120, 236));
+    background: linear-gradient(to bottom,  rgb(58, 120, 236),rgb(164, 212, 231));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,340 +405,223 @@ main{
 
 .skills{
     width: 6em;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    display: inline;
-            
-.html{
-    padding: 0;
-    position: relative;
-    margin:0.5em;
-    height: 5em;
-    width: 4em;
-   
-    .the-html-card{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease;
-        
-        &:hover{
-            transform: rotateY(180deg);
-            cursor: pointer;
-        }
-
-        .the-html-front{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            
-            .html-photo{
-                height: 80%;
-                width: 100%;
-            }
-            
-            
-            
-        }
-        .the-html-back{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            transform: rotateY(180deg);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-    }
-    }
-.css{
-        padding: 0;
-        position: relative;
-        margin:0.5em;
-        height: 5em;
-        width: 4em;
-       
-        .the-css-card{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    
+      
+    .html-div{
+        margin-left: 0.5em;
+        .html-front-page{
+            position: relative;
             transition: all 0.5s ease;
+            margin-left: 0.5em;
+        }
+        .html-photo{
+            height: 4em;
+            width: 3.5em;
+            transition: all 0.5s ease;  
             
-            &:hover{
-                transform: rotateY(180deg);
-                cursor: pointer;
-            }
-    
-            .the-css-front{
+        }
+        .html-back-page{
+            transition: all 0.5s ease;
+        }
+        .html-the-back{
+            position: relative;
+            display: none;
+            height: 4em;
+            width: 3.5em;
+            
+            .html-exp{
                 position: absolute;
-                width: 100%;
-                height: 100%;
-                backface-visibility: hidden;
-                
-                .css-photo{
-                    height: 80%;
-                    width: 100%;
-                }
-                
-                
-                
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
-            .the-css-back{
+        }
+    }
+    .css-div{
+        margin-left: 0.5em;
+        .css-front-page{
+            position: relative;
+            transition: all 0.5s ease;
+            margin-left: 0.5em;
+        }
+        .css-photo{
+            height: 4em;
+            width: 3.5em;
+            transition: all 0.5s ease;  
+            
+        }
+        .css-back-page{
+            transition: all 0.5s ease;
+        }
+        .css-the-back{
+            position: relative;
+            display: none;
+            height: 4em;
+            width: 3.5em;
+            
+            .css-exp{
                 position: absolute;
-                width: 100%;
-                height: 100%;
-                backface-visibility: hidden;
-                transform: rotateY(180deg);
-                border-radius: 5px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
-        }
-}
-.scss{
-    padding: 0;
-    position: relative;
-    margin:0.5em;
-    height: 5em;
-    width: 4em;
-   
-    .the-scss-card{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease;
-        
-        &:hover{
-            transform: rotateY(180deg);
-            cursor: pointer;
-        }
-
-        .the-scss-front{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            
-            .scss-photo{
-                height: 80%;
-                width: 100%;
-            }
-            
-            
-            
-        }
-        .the-scss-back{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            transform: rotateY(180deg);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
         }
     }
-}
-.js{
-    padding: 0;
-    position: relative;
-    margin:0.5em;
-    height: 5em;
-    width: 4em;
-   
-    .the-js-card{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease;
-        
-        &:hover{
-            transform: rotateY(180deg);
-            cursor: pointer;
+    .scss-div{
+        margin-left: 0.5em;
+        .scss-front-page{
+            position: relative;
+            transition: all 0.5s ease;
+            margin-left: 0.5em;
         }
-
-        .the-js-front{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
+        .scss-photo{
+            height: 4em;
+            width: 3.5em;
+            transition: all 0.5s ease;  
             
-            .js-photo{
-                height: 80%;
-                width: 100%;
+        }
+        .scss-back-page{
+            transition: all 0.5s ease;
+        }
+        .scss-the-back{
+            position: relative;
+            display: none;
+            height: 4em;
+            width: 3.5em;
+            
+            .scss-exp{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
-            
-            
-            
-        }
-        .the-js-back{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            transform: rotateY(180deg);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
         }
     }
-}
-.jq{
-    padding: 0;
-    position: relative;
-    margin:0.5em;
-    height: 5em;
-    width: 4em;
-   
-    .the-jq-card{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease;
-        
-        &:hover{
-            transform: rotateY(180deg);
-            cursor: pointer;
+    .js-div{
+        margin-left: 0.5em;
+        .js-front-page{
+            position: relative;
+            transition: all 0.5s ease;
+            margin-left: 0.5em;
         }
-
-        .the-jq-front{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
+        .js-photo{
+            height: 4em;
+            width: 3.5em;
+            transition: all 0.5s ease;  
             
-            .jq-photo{
-                height: 80%;
-                width: 100%;
+        }
+        .js-back-page{
+            transition: all 0.5s ease;
+        }
+        .js-the-back{
+            position: relative;
+            display: none;
+            height: 4em;
+            width: 3.5em;
+            
+            .js-exp{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
-            
-            
-            
-        }
-        .the-jq-back{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            transform: rotateY(180deg);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
         }
     }
-}
-.bs{
-    padding: 0;
-    position: relative;
-    margin:0.5em;
-    height: 5em;
-    width: 4em;
-   
-    .the-bs-card{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease;
-        
-        &:hover{
-            transform: rotateY(180deg);
-            cursor: pointer;
+    .jq-div{
+        margin-left: 0.5em;
+        .jq-front-page{
+            position: relative;
+            transition: all 0.5s ease;
+            margin-left: 0.5em;
         }
-
-        .the-bs-front{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
+        .jq-photo{
+            height: 4em;
+            width: 3.5em;
+            transition: all 0.5s ease;  
             
-            .bs-photo{
-                height: 80%;
-                width: 100%;
+        }
+        .jq-back-page{
+            transition: all 0.5s ease;
+        }
+        .jq-the-back{
+            position: relative;
+            display: none;
+            height: 4em;
+            width: 3.5em;
+            
+            .jq-exp{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
-            
-            
-            
-        }
-        .the-bs-back{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            transform: rotateY(180deg);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
         }
     }
-}
-.re{
-    padding: 0;
-    position: relative;
-    margin:0.5em;
-    height: 5em;
-    width: 4em;
+    .bs-div{
+        margin-left: 0.5em;
+        .bs-front-page{
+            position: relative;
+            transition: all 0.5s ease;
+            margin-left: 0.5em;
+        }
+        .bs-photo{
+            height: 4em;
+            width: 3.5em;
+            transition: all 0.5s ease;  
+           
+        }
+        .bs-back-page{
+            transition: all 0.5s ease;
+        }
+        .bs-the-back{
+            position: relative;
+            display: none;
+            height: 4em;
+            width: 3.5em;
+            
+            .bs-exp{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .re-div{
+        margin-left: 0.5em;
+        .re-front-page{
+            position: relative;
+            transition: all 0.5s ease;
+            margin-left: 0.5em;
+        }
+        .re-photo{
+            height: 4em;
+            width: 3.5em;
+            transition: all 0.5s ease;  
+            
+        }
+        .re-back-page{
+            transition: all 0.5s ease;
+        }
+        .re-the-back{
+            position: relative;
+            display: none;
+            height: 4em;
+            width: 3.5em;
+           
+            .re-exp{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
     
-   
-    .the-re-card{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease;
-        
-        &:hover{
-            transform: rotateY(180deg);
-            cursor: pointer;
-        }
-
-        .the-re-front{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            
-            .re-photo{
-                height: 80%;
-                width: 100%;
-            }
-            
-            
-            
-        }
-        .the-re-back{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            transform: rotateY(180deg);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-    }
-}
 }
 .links{
 display: flex;
@@ -750,41 +633,6 @@ justify-content: space-evenly;
     padding: 1rem 0.3rem;
     align-items: center;
     
-    .html-photo{
-        height: 3em;
-        width: 3em;
-        @include scale();
-    }
-    .css-photo{
-        height: 3em;
-        width: 3em;
-        @include scale();
-    }
-    .scss-photo{
-        height: 3em;
-        width: 3em;
-        @include scale();
-    }
-    .js-photo{
-        height: 3em;
-        width: 3em;
-        @include scale();
-    }
-    .jq-photo{
-        height: 3em;
-        width: 3em;
-        @include scale();
-    }
-    .bs-photo{
-        height: 3em;
-        width: 3em;
-        @include scale();
-    }
-    .re-photo{
-        height: 3em;
-        width: 3em;
-        @include scale();
-    }
 
 }
 

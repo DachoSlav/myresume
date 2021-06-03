@@ -11,8 +11,8 @@ body {
 
 main {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a4d4e7), to(#3a78ec));
-  background: linear-gradient(to bottom, #a4d4e7, #3a78ec);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3a78ec), to(#a4d4e7));
+  background: linear-gradient(to bottom, #3a78ec, #a4d4e7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,412 +506,283 @@ main {
 
 .skills {
   width: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  display: inline;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.skills .html {
-  padding: 0;
+.skills .html-div {
+  margin-left: 0.5em;
+}
+
+.skills .html-div .html-front-page {
   position: relative;
-  margin: 0.5em;
-  height: 5em;
-  width: 4em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 0.5em;
 }
 
-.skills .html .the-html-card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+.skills .html-div .html-photo {
+  height: 4em;
+  width: 3.5em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.skills .html .the-html-card:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  cursor: pointer;
-}
-
-.skills .html .the-html-card .the-html-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.skills .html .the-html-card .the-html-front .html-photo {
-  height: 80%;
-  width: 100%;
-}
-
-.skills .html .the-html-card .the-html-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .css {
-  padding: 0;
-  position: relative;
-  margin: 0.5em;
-  height: 5em;
-  width: 4em;
-}
-
-.skills .css .the-css-card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+.skills .html-div .html-back-page {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.skills .css .the-css-card:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  cursor: pointer;
-}
-
-.skills .css .the-css-card .the-css-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.skills .css .the-css-card .the-css-front .css-photo {
-  height: 80%;
-  width: 100%;
-}
-
-.skills .css .the-css-card .the-css-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .scss {
-  padding: 0;
+.skills .html-div .html-the-back {
   position: relative;
-  margin: 0.5em;
-  height: 5em;
-  width: 4em;
+  display: none;
+  height: 4em;
+  width: 3.5em;
 }
 
-.skills .scss .the-scss-card {
+.skills .html-div .html-the-back .html-exp {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.skills .css-div {
+  margin-left: 0.5em;
+}
+
+.skills .css-div .css-front-page {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 0.5em;
+}
+
+.skills .css-div .css-photo {
+  height: 4em;
+  width: 3.5em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.skills .scss .the-scss-card:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  cursor: pointer;
-}
-
-.skills .scss .the-scss-card .the-scss-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.skills .scss .the-scss-card .the-scss-front .scss-photo {
-  height: 80%;
-  width: 100%;
-}
-
-.skills .scss .the-scss-card .the-scss-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .js {
-  padding: 0;
-  position: relative;
-  margin: 0.5em;
-  height: 5em;
-  width: 4em;
-}
-
-.skills .js .the-js-card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+.skills .css-div .css-back-page {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.skills .js .the-js-card:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  cursor: pointer;
-}
-
-.skills .js .the-js-card .the-js-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.skills .js .the-js-card .the-js-front .js-photo {
-  height: 80%;
-  width: 100%;
-}
-
-.skills .js .the-js-card .the-js-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .jq {
-  padding: 0;
+.skills .css-div .css-the-back {
   position: relative;
-  margin: 0.5em;
-  height: 5em;
-  width: 4em;
+  display: none;
+  height: 4em;
+  width: 3.5em;
 }
 
-.skills .jq .the-jq-card {
+.skills .css-div .css-the-back .css-exp {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.skills .scss-div {
+  margin-left: 0.5em;
+}
+
+.skills .scss-div .scss-front-page {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 0.5em;
+}
+
+.skills .scss-div .scss-photo {
+  height: 4em;
+  width: 3.5em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.skills .jq .the-jq-card:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  cursor: pointer;
-}
-
-.skills .jq .the-jq-card .the-jq-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.skills .jq .the-jq-card .the-jq-front .jq-photo {
-  height: 80%;
-  width: 100%;
-}
-
-.skills .jq .the-jq-card .the-jq-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .bs {
-  padding: 0;
-  position: relative;
-  margin: 0.5em;
-  height: 5em;
-  width: 4em;
-}
-
-.skills .bs .the-bs-card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+.skills .scss-div .scss-back-page {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.skills .bs .the-bs-card:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  cursor: pointer;
-}
-
-.skills .bs .the-bs-card .the-bs-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.skills .bs .the-bs-card .the-bs-front .bs-photo {
-  height: 80%;
-  width: 100%;
-}
-
-.skills .bs .the-bs-card .the-bs-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .re {
-  padding: 0;
+.skills .scss-div .scss-the-back {
   position: relative;
-  margin: 0.5em;
-  height: 5em;
-  width: 4em;
+  display: none;
+  height: 4em;
+  width: 3.5em;
 }
 
-.skills .re .the-re-card {
+.skills .scss-div .scss-the-back .scss-exp {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.skills .js-div {
+  margin-left: 0.5em;
+}
+
+.skills .js-div .js-front-page {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 0.5em;
+}
+
+.skills .js-div .js-photo {
+  height: 4em;
+  width: 3.5em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.skills .re .the-re-card:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  cursor: pointer;
+.skills .js-div .js-back-page {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.skills .re .the-re-card .the-re-front {
+.skills .js-div .js-the-back {
+  position: relative;
+  display: none;
+  height: 4em;
+  width: 3.5em;
+}
+
+.skills .js-div .js-the-back .js-exp {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.skills .re .the-re-card .the-re-front .re-photo {
-  height: 80%;
-  width: 100%;
+.skills .jq-div {
+  margin-left: 0.5em;
 }
 
-.skills .re .the-re-card .the-re-back {
+.skills .jq-div .jq-front-page {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 0.5em;
+}
+
+.skills .jq-div .jq-photo {
+  height: 4em;
+  width: 3.5em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .jq-div .jq-back-page {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .jq-div .jq-the-back {
+  position: relative;
+  display: none;
+  height: 4em;
+  width: 3.5em;
+}
+
+.skills .jq-div .jq-the-back .jq-exp {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.skills .bs-div {
+  margin-left: 0.5em;
+}
+
+.skills .bs-div .bs-front-page {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 0.5em;
+}
+
+.skills .bs-div .bs-photo {
+  height: 4em;
+  width: 3.5em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .bs-div .bs-back-page {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .bs-div .bs-the-back {
+  position: relative;
+  display: none;
+  height: 4em;
+  width: 3.5em;
+}
+
+.skills .bs-div .bs-the-back .bs-exp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.skills .re-div {
+  margin-left: 0.5em;
+}
+
+.skills .re-div .re-front-page {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 0.5em;
+}
+
+.skills .re-div .re-photo {
+  height: 4em;
+  width: 3.5em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .re-div .re-back-page {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skills .re-div .re-the-back {
+  position: relative;
+  display: none;
+  height: 4em;
+  width: 3.5em;
+}
+
+.skills .re-div .re-the-back .re-exp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .links {
@@ -933,97 +804,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.links .link .html-photo {
-  height: 3em;
-  width: 3em;
-}
-
-.links .link .html-photo:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: pointer;
-}
-
-.links .link .css-photo {
-  height: 3em;
-  width: 3em;
-}
-
-.links .link .css-photo:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: pointer;
-}
-
-.links .link .scss-photo {
-  height: 3em;
-  width: 3em;
-}
-
-.links .link .scss-photo:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: pointer;
-}
-
-.links .link .js-photo {
-  height: 3em;
-  width: 3em;
-}
-
-.links .link .js-photo:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: pointer;
-}
-
-.links .link .jq-photo {
-  height: 3em;
-  width: 3em;
-}
-
-.links .link .jq-photo:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: pointer;
-}
-
-.links .link .bs-photo {
-  height: 3em;
-  width: 3em;
-}
-
-.links .link .bs-photo:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: pointer;
-}
-
-.links .link .re-photo {
-  height: 3em;
-  width: 3em;
-}
-
-.links .link .re-photo:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: pointer;
 }
 
 .skills-2 {
