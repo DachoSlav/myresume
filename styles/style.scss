@@ -404,18 +404,20 @@ main{
 
 
 .skills{
-    width: 6em;
+    width: 7em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-family: 'Courier New', Courier, monospace;
     transition: all 1s ease;
-    
+
     .html-div{
+        margin-left: 0.5em;
         &:hover{
             cursor: pointer;
+            
         }
-        margin-left: 0.5em;
+        
         .html-front-page{
             position: relative;
             
@@ -427,15 +429,13 @@ main{
             
             
         }
-        .html-back-page{
-           
-        }
+        
         .html-the-back{
             position: relative;
             display: none;
             height: 4em;
             width: 3.5em;
-            margin-left: 0.5em;
+            margin-left: 1em;
             
             .html-exp{
                 position: absolute;
@@ -470,7 +470,7 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            margin-left: 0.5em;
+            margin-left: 1em;
 
             .css-exp{
                 position: absolute;
@@ -504,7 +504,7 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            margin-left: 0.5em;
+            margin-left: 1em;
 
             .scss-exp{
                 position: absolute;
@@ -538,7 +538,7 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            margin-left: 0.5em;
+            margin-left: 1em;
 
             .js-exp{
                 position: absolute;
@@ -572,8 +572,8 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            margin-left: 0.5em;
-            margin-left: 0.5em;
+            margin-left: 1em;
+            
 
             .jq-exp{
                 position: absolute;
@@ -597,7 +597,7 @@ main{
             height: 4em;
             width: 3.5em;
             transition: all 0.5s ease;  
-           
+            
         }
         .bs-back-page{
             transition: all 0.5s ease;
@@ -607,7 +607,7 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            margin-left: 0.5em;
+            margin-left: 1em;
 
             .bs-exp{
                 position: absolute;
@@ -641,7 +641,7 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            margin-left: 0.5em;
+            margin-left: 1em;
 
             .re-exp{
                 position: absolute;

@@ -14,6 +14,7 @@ $(document).ready(function(){
         return html = 0;
     }else{
         $(".html-photo").css("display" , "block");
+        $(".html-photo").css("margin-left" , "0.5em");
         $(".html-front-page").removeClass("html-back-page");
         $(".html-the-back").css("display", "none")
         
@@ -34,6 +35,7 @@ $(document).ready(function(){
         return css = 0;
     }else{
         $(".css-photo").css("display" , "block");
+        $(".css-photo").css("margin-left" , "0.5em");
         $(".css-front-page").removeClass("css-back-page");
         $(".css-the-back").css("display", "none")
         
@@ -55,6 +57,7 @@ $(document).ready(function(){
         return scss = 0;
     }else{
         $(".scss-photo").css("display" , "block");
+        $(".scss-photo").css("margin-left" , "0.5em");
         $(".scss-front-page").removeClass("css-back-page");
         $(".scss-the-back").css("display", "none")
         
@@ -76,6 +79,7 @@ $(document).ready(function(){
         return js = 0;
     }else{
         $(".js-photo").css("display" , "block");
+        $(".js-photo").css("margin-left" , "0.5em");
         $(".js-front-page").removeClass("css-back-page");
         $(".js-the-back").css("display", "none")
         
@@ -97,6 +101,7 @@ $(document).ready(function(){
         return jq = 0;
     }else{
         $(".jq-photo").css("display" , "block");
+        $(".jq-photo").css("margin-left" , "0.5em");
         $(".jq-front-page").removeClass("css-back-page");
         $(".jq-the-back").css("display", "none")
         
@@ -118,6 +123,7 @@ $(document).ready(function(){
         return bs = 0;
     }else{
         $(".bs-photo").css("display" , "block");
+        $(".bs-photo").css("margin-left" , "0.5em");
         $(".bs-front-page").removeClass("css-back-page");
         $(".bs-the-back").css("display", "none")
         
@@ -139,6 +145,7 @@ $(document).ready(function(){
         return re = 0;
     }else{
         $(".re-photo").css("display" , "block");
+        $(".re-photo").css("margin-left" , "0.5em");
         $(".re-front-page").removeClass("css-back-page");
         $(".re-the-back").css("display", "none")
         

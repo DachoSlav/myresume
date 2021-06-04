@@ -505,7 +505,7 @@ main {
 }
 
 .skills {
-  width: 6em;
+  width: 7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,7 +543,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 
 .skills .html-div .html-the-back .html-exp {
@@ -586,7 +586,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 
 .skills .css-div .css-the-back .css-exp {
@@ -629,7 +629,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 
 .skills .scss-div .scss-the-back .scss-exp {
@@ -672,7 +672,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 
 .skills .js-div .js-the-back .js-exp {
@@ -715,8 +715,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
-  margin-left: 0.5em;
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 
 .skills .jq-div .jq-the-back .jq-exp {
@@ -759,7 +758,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 
 .skills .bs-div .bs-the-back .bs-exp {
@@ -802,7 +801,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 
 .skills .re-div .re-the-back .re-exp {
