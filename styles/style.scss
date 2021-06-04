@@ -410,22 +410,25 @@ main{
     justify-content: space-around;
     
     font-family: 'Courier New', Courier, monospace;
-      
+      transition: all 1s ease;
     .html-div{
+        &:hover{
+            cursor: pointer;
+        }
         margin-left: 0.5em;
         .html-front-page{
             position: relative;
-            transition: all 0.5s ease;
+            
             margin-left: 0.5em;
         }
         .html-photo{
             height: 4em;
             width: 3.5em;
-            transition: all 0.5s ease;  
+            
             
         }
         .html-back-page{
-            transition: all 0.5s ease;
+           
         }
         .html-the-back{
             position: relative;
@@ -433,17 +436,21 @@ main{
             height: 4em;
             width: 3.5em;
             margin-left: 0.5em;
-            transition: all 0.5s ease;
+            
             .html-exp{
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                
             }
         }
     }
     .css-div{
         margin-left: 0.5em;
+        &:hover{
+            cursor: pointer;
+        }
         .css-front-page{
             position: relative;
             transition: all 0.5s ease;
@@ -475,6 +482,9 @@ main{
     }
     .scss-div{
         margin-left: 0.5em;
+        &:hover{
+            cursor: pointer;
+        }
         .scss-front-page{
             position: relative;
             transition: all 0.5s ease;
@@ -506,6 +516,9 @@ main{
     }
     .js-div{
         margin-left: 0.5em;
+        &:hover{
+            cursor: pointer;
+        }
         .js-front-page{
             position: relative;
             transition: all 0.5s ease;
@@ -537,6 +550,9 @@ main{
     }
     .jq-div{
         margin-left: 0.5em;
+        &:hover{
+            cursor: pointer;
+        }
         .jq-front-page{
             position: relative;
             transition: all 0.5s ease;
@@ -569,6 +585,9 @@ main{
     }
     .bs-div{
         margin-left: 0.5em;
+        &:hover{
+            cursor: pointer;
+        }
         .bs-front-page{
             position: relative;
             transition: all 0.5s ease;
@@ -600,6 +619,9 @@ main{
     }
     .re-div{
         margin-left: 0.5em;
+        &:hover{
+            cursor: pointer;
+        }
         .re-front-page{
             position: relative;
             transition: all 0.5s ease;

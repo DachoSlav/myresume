@@ -516,29 +516,26 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-family: 'Courier New', Courier, monospace;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .skills .html-div {
   margin-left: 0.5em;
 }
 
+.skills .html-div:hover {
+  cursor: pointer;
+}
+
 .skills .html-div .html-front-page {
   position: relative;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   margin-left: 0.5em;
 }
 
 .skills .html-div .html-photo {
   height: 4em;
   width: 3.5em;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.skills .html-div .html-back-page {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .skills .html-div .html-the-back {
@@ -547,8 +544,6 @@ main {
   height: 4em;
   width: 3.5em;
   margin-left: 0.5em;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .skills .html-div .html-the-back .html-exp {
@@ -561,6 +556,10 @@ main {
 
 .skills .css-div {
   margin-left: 0.5em;
+}
+
+.skills .css-div:hover {
+  cursor: pointer;
 }
 
 .skills .css-div .css-front-page {
@@ -602,6 +601,10 @@ main {
   margin-left: 0.5em;
 }
 
+.skills .scss-div:hover {
+  cursor: pointer;
+}
+
 .skills .scss-div .scss-front-page {
   position: relative;
   -webkit-transition: all 0.5s ease;
@@ -641,6 +644,10 @@ main {
   margin-left: 0.5em;
 }
 
+.skills .js-div:hover {
+  cursor: pointer;
+}
+
 .skills .js-div .js-front-page {
   position: relative;
   -webkit-transition: all 0.5s ease;
@@ -678,6 +685,10 @@ main {
 
 .skills .jq-div {
   margin-left: 0.5em;
+}
+
+.skills .jq-div:hover {
+  cursor: pointer;
 }
 
 .skills .jq-div .jq-front-page {
@@ -720,6 +731,10 @@ main {
   margin-left: 0.5em;
 }
 
+.skills .bs-div:hover {
+  cursor: pointer;
+}
+
 .skills .bs-div .bs-front-page {
   position: relative;
   -webkit-transition: all 0.5s ease;
@@ -757,6 +772,10 @@ main {
 
 .skills .re-div {
   margin-left: 0.5em;
+}
+
+.skills .re-div:hover {
+  cursor: pointer;
 }
 
 .skills .re-div .re-front-page {

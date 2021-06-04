@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
     var html=1;
+    
     $(".html-div").hover(function none() {
         
     if(html==1){
