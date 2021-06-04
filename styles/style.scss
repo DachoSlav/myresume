@@ -408,9 +408,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
     font-family: 'Courier New', Courier, monospace;
-      transition: all 1s ease;
+    transition: all 1s ease;
+    
     .html-div{
         &:hover{
             cursor: pointer;
