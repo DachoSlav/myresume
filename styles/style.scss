@@ -408,8 +408,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transition: all 1s ease-in-out;
     
+    font-family: 'Courier New', Courier, monospace;
       
     .html-div{
         margin-left: 0.5em;
@@ -432,7 +432,8 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            
+            margin-left: 0.5em;
+            transition: all 0.5s ease;
             .html-exp{
                 position: absolute;
                 top: 50%;
@@ -462,7 +463,8 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            
+            margin-left: 0.5em;
+
             .css-exp{
                 position: absolute;
                 top: 50%;
@@ -492,7 +494,8 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            
+            margin-left: 0.5em;
+
             .scss-exp{
                 position: absolute;
                 top: 50%;
@@ -522,7 +525,8 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            
+            margin-left: 0.5em;
+
             .js-exp{
                 position: absolute;
                 top: 50%;
@@ -552,7 +556,9 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            
+            margin-left: 0.5em;
+            margin-left: 0.5em;
+
             .jq-exp{
                 position: absolute;
                 top: 50%;
@@ -582,7 +588,8 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-            
+            margin-left: 0.5em;
+
             .bs-exp{
                 position: absolute;
                 top: 50%;
@@ -612,7 +619,8 @@ main{
             display: none;
             height: 4em;
             width: 3.5em;
-           
+            margin-left: 0.5em;
+
             .re-exp{
                 position: absolute;
                 top: 50%;

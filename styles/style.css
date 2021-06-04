@@ -515,8 +515,7 @@ main {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .skills .html-div {
@@ -547,6 +546,9 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
+  margin-left: 0.5em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .skills .html-div .html-the-back .html-exp {
@@ -585,6 +587,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
+  margin-left: 0.5em;
 }
 
 .skills .css-div .css-the-back .css-exp {
@@ -623,6 +626,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
+  margin-left: 0.5em;
 }
 
 .skills .scss-div .scss-the-back .scss-exp {
@@ -661,6 +665,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
+  margin-left: 0.5em;
 }
 
 .skills .js-div .js-the-back .js-exp {
@@ -699,6 +704,8 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
+  margin-left: 0.5em;
+  margin-left: 0.5em;
 }
 
 .skills .jq-div .jq-the-back .jq-exp {
@@ -737,6 +744,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
+  margin-left: 0.5em;
 }
 
 .skills .bs-div .bs-the-back .bs-exp {
@@ -775,6 +783,7 @@ main {
   display: none;
   height: 4em;
   width: 3.5em;
+  margin-left: 0.5em;
 }
 
 .skills .re-div .re-the-back .re-exp {
